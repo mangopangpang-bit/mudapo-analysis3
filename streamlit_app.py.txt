@@ -1,0 +1,15 @@
+import streamlit as st
+
+st.title("무대포 분석 - Streamlit 앱")
+
+st.write("여기에 축구 데이터 분석 결과를 표시합니다.")
+
+# 예시 데이터
+matches = [
+    {"경기": "경기1", "승리팀": "팀A", "점수": 2},
+    {"경기": "경기2", "승리팀": "팀B", "점수": 1},
+    {"경기": "경기3", "승리팀": "팀C", "점수": 3},
+]
+
+for match in matches:
+    st.write(f"{match['경기']} - 승리팀: {match['승리팀']}, 점수: {match['점수']}")
